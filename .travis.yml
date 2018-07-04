@@ -23,7 +23,7 @@ notifications:
 jobs:
   include:
     - stage: lint
-      script: 
+      script:
         - python -m tox
         - npm install && npm run spell
       env: TOXENV=lint
